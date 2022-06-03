@@ -10,4 +10,7 @@
         msg="{{ ansible_facts.hostname }}"
     - name: mount
       ansible.builtin.command: df -h
-    
+      register: _df_h
+    - name: debug mount
+      debug:
+        msg="{{ _df_h }}"
