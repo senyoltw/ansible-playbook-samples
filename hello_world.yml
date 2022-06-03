@@ -9,7 +9,7 @@
       debug:
         msg="{{ ansible_facts.hostname }}"
     - name: cmd
-      ansible.builtin.command: ls -al ~/
+      ansible.builtin.command: ls -al /var/lib/awx/projects
       register: _cmd
     - name: debug cmd
       debug:
