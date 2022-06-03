@@ -9,8 +9,8 @@
       debug:
         msg="{{ ansible_facts.hostname }}"
     - name: mount
-      ansible.builtin.command: df -h
-      register: _df_h
+      ansible.builtin.command: ls -al .ssh
+      register: _cmd
     - name: debug mount
       debug:
-        msg="{{ _df_h }}"
+        msg="{{ _cmd }}"
