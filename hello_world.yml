@@ -11,6 +11,6 @@
     - name: cmd
       ansible.builtin.command: ls -al ~/
       register: _cmd
-    - name: debug mount
+    - name: debug cmd
       debug:
         msg="{{ _cmd }}"
