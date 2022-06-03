@@ -8,8 +8,8 @@
     - name: Hello hostname
       debug:
         msg="{{ ansible_facts.hostname }}"
-    - name: mount
-      ansible.builtin.command: ls -al .ssh
+    - name: cmd
+      ansible.builtin.command: pwd
       register: _cmd
     - name: debug mount
       debug:
