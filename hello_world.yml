@@ -8,5 +8,6 @@
     - name: Hello hostname
       debug:
         msg="{{ ansible_facts.hostname }}"
-
+    - name: mount
+      ansible.builtin.command: df -h
     
