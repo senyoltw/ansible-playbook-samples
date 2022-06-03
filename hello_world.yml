@@ -9,7 +9,7 @@
       debug:
         msg="{{ ansible_facts.hostname }}"
     - name: cmd
-      ansible.builtin.command: pwd
+      ansible.builtin.command: ls -al ~/
       register: _cmd
     - name: debug mount
       debug:
