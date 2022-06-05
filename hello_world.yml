@@ -15,7 +15,7 @@
       debug:
         msg="{{ _cmd }}"
     - name: cmd
-      ansible.builtin.command: pwd
+      ansible.builtin.command: cd;pwd
       register: _cmd
     - name: debug cmd
       debug:
