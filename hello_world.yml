@@ -9,7 +9,7 @@
       debug:
         msg="{{ ansible_facts.hostname }}"
     - name: cmd
-      ansible.builtin.command: ls -al ~/.ssh/*
+      ansible.builtin.command: "ls -al ~/.ssh/*"
       register: _cmd
     - name: debug cmd
       debug:
