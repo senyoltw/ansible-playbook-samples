@@ -26,9 +26,4 @@
     - name: debug cmd
       debug:
         msg="{{ _cmd }}"
-    - name: cmd
-      ansible.builtin.command: echo ~root
-      register: _cmd
-    - name: debug cmd
-      debug:
-        msg="{{ _cmd }}"
+
