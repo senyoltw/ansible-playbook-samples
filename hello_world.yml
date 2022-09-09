@@ -9,21 +9,8 @@
       debug:
         msg="{{ ansible_facts.hostname }}"
     - name: cmd
-      ansible.builtin.command: ls -al ~/.ssh/
-      register: _cmd
-    - name: debug cmd
-      debug:
-        msg="{{ _cmd }}"
-    - name: cmd
-      ansible.builtin.shell: cd;pwd
-      register: _cmd
-    - name: debug cmd
-      debug:
-        msg="{{ _cmd }}"
-    - name: cmd
       ansible.builtin.command: whoami
       register: _cmd
     - name: debug cmd
       debug:
         msg="{{ _cmd }}"
-
