@@ -18,3 +18,9 @@
     - name: debug cmd
       debug:
         msg="{{ _cmd }}"
+    - name: debug e_vars_1
+      debug:
+        msg="{{ e_vars_1 }}"
+    - name: debug e_vars_2
+      debug:
+        msg="{{ e_vars_2 }}"
